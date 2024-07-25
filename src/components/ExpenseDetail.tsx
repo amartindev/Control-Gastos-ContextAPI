@@ -41,7 +41,7 @@ export default function ExpenseDetail({ expense }: ExpenseDetailProps) {
     return (
         <SwipeableList>
             <SwipeableListItem maxSwipe={30} leadingActions={leadingActions()} trailingActions={trailingActions()}>
-                <div className="bg-white shadow-lg p-10 w-full border-b border-gray-200 flex gap-5 intems-center">
+                <div className="bg-purple-heart-100 shadow-lg p-5 w-full border-b border-gray-200 flex gap-5 intems-center">
                     <div>
                         <img
                             src={`/icono_${categoryInfo.icon}.svg`}
@@ -50,11 +50,11 @@ export default function ExpenseDetail({ expense }: ExpenseDetailProps) {
                         />
                     </div>
                     <div className="flex-1 space-y-3">
-                        <p className="text-sm font-bold uppercase text-slate-500">
+                        <p className="text-sm font-bold uppercase text-purple-heart-500">
                             {categoryInfo.name}
                         </p>
                         <p>{expense.expenseName}</p>
-                        <p className="text-slate-600 text-sm">
+                        <p className="text-purple-heart-600 text-sm">
                             {formatDate(expense.date!.toString())}
                         </p>
                     </div>

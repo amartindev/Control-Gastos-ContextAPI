@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
+# Control-Gastos-ContextAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+**Control-Gastos-ContextAPI** es una aplicación web para la gestión de gastos personales, desarrollada utilizando React y Context API. Permite a los usuarios registrar, visualizar y gestionar sus gastos de manera eficiente, ofreciendo una interfaz intuitiva y sencilla.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- Registro de gastos con categorías y montos.
+- Visualización de gastos por categoría.
+- Actualización y eliminación de gastos.
+- Manejo del estado global de la aplicación mediante Context API.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
 
-- Configure the top-level `parserOptions` property like this:
+Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. **Clona el repositorio:**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```bash
+   git clone https://github.com/amartindev/Control-Gastos-ContextAPI.git

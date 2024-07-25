@@ -74,7 +74,7 @@ export default function ExpenseForm() {
 
     return (
         <form action="" className="space-y-5" onSubmit={handleSubmit}>
-            <legend className="uppercase text-center text-2xl font-black border-b-4 border-blue-500 py-2">
+            <legend className="uppercase text-center text-2xl font-black border-b-4 border-purple-heart-500 py-2">
                 {state.editingId ? 'Guardar Cambios' : 'Nuevo Gasto'}
             </legend>
 
@@ -87,7 +87,7 @@ export default function ExpenseForm() {
                     type="text"
                     id="expenseName"
                     placeholder="Añade el Nombre del gasto"
-                    className="bg-slate-100 p2"
+                    className="bg-electric-violet-50 p2"
                     name="expenseName"
                     value={expense.expenseName}
                     onChange={handleChange}
@@ -101,7 +101,7 @@ export default function ExpenseForm() {
                     type="number"
                     id="amount"
                     placeholder="Añade la cantidad del gasto"
-                    className="bg-slate-100 p2"
+                    className="bg-electric-violet-50 p2"
                     name="amount"
                     value={expense.amount}
                     onChange={handleChange}
@@ -113,7 +113,7 @@ export default function ExpenseForm() {
                 </label>
                 <select
                     id="category"
-                    className="bg-slate-100 p2"
+                    className="bg-electric-violet-50 p2"
                     name="category"
                     value={expense.category}
                     onChange={handleChange}
@@ -132,7 +132,7 @@ export default function ExpenseForm() {
                     Fecha Gasto:
                 </label>
                 <DatePicker
-                    className="bg-slate-100 p-2 border-0"
+                    className="bg-electric-violet-50 p-2 border-0"
                     value={expense.date}
                     onChange={handleChangeDate}
                 />
@@ -140,7 +140,7 @@ export default function ExpenseForm() {
 
             <input
                 type="submit"
-                className="bg-blue-600 cursosr-pointer w-full p-2 text-white uppercase font-bold rounded-lg"
+                className="bg-purple-heart-600 cursosr-pointer w-full p-2 text-white uppercase font-bold rounded-lg"
                 value={state.editingId ? 'Guardar Cambios' : 'Registrar Gasto'}
             />
         </form>
